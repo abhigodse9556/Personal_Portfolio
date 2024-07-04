@@ -4,12 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+<!-- https://rajgupta12.netlify.app/ -->
 <body>
-    <header class="header">
-        <img src="./images/Postman - Postman API Fundamentals Student Expert - 2024-06-25.png" alt="">
-        <h1>Name</h1>
-    </header>
+    <main>
+
+        <aside class="sidebar">
+
+            <div class="info-content">
+                <figure class="photo">
+                    <img id="person-img" src="./images/Photo/Abhi.jpg" alt="">
+                </figure>
+                <div class="person">
+                    <h1 class="name">Abhishek Godse</h1>
+                    <p class="title">Web Developer</p>
+                </div>
+            </div>
+            <!-- ------------------------------------ -->
+            <div class="sidebar-info_more">
+
+                <div class="separator"></div>
+
+                <!-- first part -->
+
+                <ul class="contact-list">
+
+                    <li class="contact-items">
+                        <div class="icon-box">
+                            <img class="icon-img" id="mail-icon" src="./images/icon/envelope-at-fill.svg" alt="">
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">EMAIL</p>
+                            <a class="contact-link" href="">abhigodse9556@gmail.com</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-items">
+                        <div class="icon-box">
+                            <img class="icon-img" src="./images/icon/telephone-fill.svg" alt="">
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">PHONE</p>
+                            <a class="contact-link" href="">9503194613</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-items">
+                        <div class="icon-box">
+                            <img class="icon-img" src="./images/icon/calendar-date-fill.svg" alt="">
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">BIRTH DATE</p>
+                            <time datetime="2000-05-19">19 May, 2000</time>
+                        </div>
+                    </li>
+
+                    <li class="contact-items">
+                        <div class="icon-box">
+                            <img class="icon-img" src="./images/icon/geo-alt-fill.svg" alt="">
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">LOCATION</p>
+                            <address>Mumbai, Maharashtra, India</address>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <!-- end of first part -->
+
+                <!-- second part -->
+
+                <ul class="social-list">
+
+                    <li class="social-item">
+                        <a href=""><img src="./images/icon/instagram.svg" alt=""></a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href=""><img src="./images/icon/facebook.svg" alt=""></a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href=""><img src="./images/icon/twitter.svg" alt=""></a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href=""><img src="./images/icon/github.svg" alt=""></a>
+                    </li>
+
+                    <li class="social-item">
+                        <i class="bi bi-linkedin"></i>
+                        <a href=""><img src="./images/icon/linkedin.svg" alt=""></i></a>
+                    </li>
+
+                </ul>
+
+                <!-- end of second part -->
+
+            </div>
+            <!-- ------------------------------------ -->
+        </aside>
+
+        <section class="main-content">
+            <div class="navbar">
+                <li><a class="nav-items" href="">Home</a></li>
+                <li><a class="nav-items" href="">About</a></li>
+                <li><a class="nav-items" href="">Resume</a></li>
+                <li><a class="nav-items" href="">Projects</a></li>
+                <li><a class="nav-items" href="">Contact</a></li>
+            </div>
+            <article class="home">
+                <h3 class="home-title">Hello, It's me</h3>
+                <h1 class="my-name">Abhishek Godse</h1>
+                <h3 class="home-title">And I'm a 
+                    <em class="text">Front End Developer</em>
+                    <span class="typed-cursor" aria-hidden="true">|</span>
+                </h3>
+                <p class="home-text">Passionate front-end developer. Skilled in HTML, HTML5, CSS, Tailwind CSS, Bootstrap, JavaScript. Recent MCA post-graduate. Eager to innovate and learn.</p>
+                <a href=""><div class="download">
+                    Download CV <img class="icon-img" id="" src="./images/icon/cloud-arrow-down.svg" alt="">
+                </div></a>
+            </article>
+        </section>
+
+    </main>
 </body>
 </html>
