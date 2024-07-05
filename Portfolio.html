@@ -18,7 +18,7 @@
                 </figure>
                 <div class="person">
                     <h1 class="name">Abhishek Godse</h1>
-                    <p class="title">Web Developer</p>
+                    <p class="title">Full Stack Developer</p>
                 </div>
             </div>
             <!-- ------------------------------------ -->
@@ -79,7 +79,7 @@
                 <ul class="social-list">
 
                     <li class="social-item">
-                        <a href=""><img src="./images/icon/instagram.svg" alt=""></a>
+                        <a href="https://www.instagram.com/a_.b._.h._.i/" target="_blank"><img src="./images/icon/instagram.svg" alt=""></a>
                     </li>
 
                     <li class="social-item">
@@ -107,13 +107,13 @@
             <!-- ------------------------------------ -->
         </aside>
 
-        <section class="main-content">
+        <section id="home-content" class="main-content">
             <div class="navbar">
-                <li><a class="nav-items" href="">Home</a></li>
-                <li><a class="nav-items" href="">About</a></li>
-                <li><a class="nav-items" href="">Resume</a></li>
-                <li><a class="nav-items" href="">Projects</a></li>
-                <li><a class="nav-items" href="">Contact</a></li>
+                <li><a class="nav-items active" href="#">Home</a></li>
+                <li><a class="nav-items" href="#" onclick="displayAbout()">About</a></li>
+                <li><a class="nav-items" href="#" >Resume</a></li>
+                <li><a class="nav-items" href="#" >Projects</a></li>
+                <li><a class="nav-items" href="#" >Contact</a></li>
             </div>
             <article class="home">
                 <h3 class="home-title">Hello, It's me</h3>
@@ -121,10 +121,75 @@
                 <h3 class="home-title">And I'm a 
                     <em id="element" class="text">Front End Developer</em>
                 </h3>
-                <p class="home-text">Passionate front-end developer. Skilled in HTML, HTML5, CSS, Tailwind CSS, Bootstrap, JavaScript. Recent MCA post-graduate. Eager to innovate and learn.</p>
+                <p class="home-text">Passionate Full Stack developer. Skilled in Java, Python, HTML, HTML5, CSS, Tailwind CSS, Bootstrap, JavaScript, SQL, MySQL, MangoDB. 
+                    <br>Recent MCA post-graduate specialized in Cloud Technology. Eager to innovate and learn.</p>
                 <a href=""><div class="download">
                     Download CV <img class="icon-img" id="" src="./images/icon/cloud-arrow-down.svg" alt="">
                 </div></a>
+            </article>
+        </section>
+
+        <section id="about-content" class="main-content" style="display: none;">
+            <div class="navbar">
+                <li><a class="nav-items" href="">Home</a></li>
+                <li><a class="nav-items active" href="" onclick="displayAbout()">About</a></li>
+                <li><a class="nav-items" href="">Resume</a></li>
+                <li><a class="nav-items" href="">Projects</a></li>
+                <li><a class="nav-items" href="">Contact</a></li>
+            </div>
+            <article class="about">
+                <h3 class="about-title">About Me</h3>
+                <p class="about-text">A recent post-graduate in MCA with a specialization in Cloud Technology. 
+                    I excel in both front-end and back-end development. On the front end, I create engaging UI/UX with HTML, CSS, JavaScript, jQuery, AngularJS, and Bootstrap. On the back end, I use Java and Python, working with frameworks like Spring and Django. I manage databases using SQL, MongoDB, and MySQL, ensuring data security and integrity. Additionally, I am proficient in cloud computing, building and optimizing cloud systems effectively.
+                    <br><br>
+                    Throughout my academic journey, I have completed numerous projects, including dynamic websites and interactive web applications, showcasing my ability to translate design concepts into functional code. 
+                    Known for my creativity and attention to detail, I am eager to contribute to innovative projects and continue growing in a collaborative team environment.
+                </p>
+                <h3 class="about-title">What I can Do</h3>
+                <div class="doing-list">
+                    <div class="doing">
+                        <div class="doing-icon">
+                            <img src="./images/icon/web-design.png" alt="">
+                        </div>
+                        <div class="doing-content">
+                            <h3 class="doing-title">Front End Development</h3>
+                            <p class="doing-text">Able to create and design the UI and UX of websites. Can use web languages like HTML, CSS, and JavaScript. Can also use frameworks and libraries like jQuery, AngularJS, Bootstrap.</p>
+                        </div>
+                    </div>
+                    <div class="doing">
+                        <div class="doing-icon">
+                            <img src="./images/icon/front-end.png" alt="">
+                        </div>
+                        <div class="doing-content">
+                            <h3 class="doing-title">Back End Development</h3>
+                            <p class="doing-text">
+                                Able to do back end development in Java as well as Python programming languages.
+                                Capable of working with frameworks such as Spring in Java and Django in python.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="doing">
+                        <div class="doing-icon">
+                            <img src="./images/icon/relational.png" alt="">
+                        </div>
+                        <div class="doing-content">
+                            <h3 class="doing-title">Database Management</h3>
+                            <p class="doing-text">
+                                Skilled to use SQL, MongoDB and MySQL to build and modify databases. Can create RDBMS to store and manage data, and keep data secure and up-to-date. 
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="doing">
+                        <div class="doing-icon">
+                            <img src="./images/icon/server.png" alt="">
+                        </div>
+                        <div class="doing-content">
+                            <h3 class="doing-title">Cloud Computing</h3>
+                            <p class="doing-text">Familiar with applying engineering disciplines to cloud computing to build, maintain, and optimize cloud systems. Capable for all the technical aspects of cloud computing.</p>
+                        </div>
+                    </div>
+                </div>
             </article>
         </section>
 
@@ -132,12 +197,20 @@
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
+
+        function displayAbout(){
+            document.getElementById("home-content").style.display="none";
+            document.getElementById("about-content").style.display="flex";
+        }
+
         var typed = new Typed('#element', {
-            strings: ['<i>Front End Developer.</i>', 'Web Developer.'],
+            strings: ['<i>Full Stack Developer.</i>', 'Cloud Engineer.'],
             typeSpeed: 100,
             loop: true,
             loopcount: Infinity,
         });
+
+        
     </script>
 </body>
 </html>

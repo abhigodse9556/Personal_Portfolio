@@ -11,7 +11,7 @@ html,body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto Slab", serif;;
+    font-family: "Roboto Slab", serif;
 }
 
 a{
@@ -20,6 +20,10 @@ a{
 
 li{
     list-style: none;
+}
+
+p{
+    text-align: justify;
 }
 
 img,
@@ -73,7 +77,7 @@ main{
     align-items: center;
 }
 
-.info-content .name{
+.name{
     text-align: center;
     color: azure;
     font-size: 25px;
@@ -82,7 +86,7 @@ main{
     margin: 10px 0px;
 }
 
-.info-content .title{
+.title{
     text-align: center;
     color: azure;
     font-size: 15px;
@@ -181,6 +185,10 @@ main{
     color: #fef805;
 }
 
+.active{
+    color: #fef805;
+}
+
 .home{
     display: flex;
     flex-direction: column;
@@ -227,5 +235,120 @@ main{
     width: 30px;
 }
 
+#about-content{
+    display: none;
+}
 
+@media (min-width: 320px) and (max-width: 426px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding: 15px;
+    }
+
+    .sidebar{
+        width: 95%;
+        margin: 0px;
+    }
+
+    #person-img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .info-content{
+        display: flex;
+        gap: 20px;
+    }
+
+    .person{
+        justify-content: center;
+    }
+}
+
+@media (max-width:320px) {
+    #person-img{
+        width: 100px;
+        height: 100px;
+    }
+
+    main{
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding: 15px;
+    }
+
+    .sidebar{
+        width: 95%;
+        margin: 0px;
+    }
+
+    .info-content{
+        display: flex;
+        gap: 20px;
+    }
+
+    .person{
+        justify-content: center;
+    }
+
+}
+
+.about{
+    position: absolute;
+    color: azure;
+    margin: 40px;
+    top: 0px;
+}
+
+.about-title{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about-text{
+    color: #808080;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.doing-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.doing{
+    width: 45%;
+    height: 150px;
+    background-color: #414141;
+    box-shadow: 15px 15px 15px black;
+    border-radius: 15px;
+    padding: 8px 15px;
+    display: flex;
+}
+
+.doing-icon img{
+    width: 60px;
+    height: 60px;
+    margin: 30px 10px 30px 0px;
+}
+
+.doing-title{
+    margin-bottom: 10px;
+    color: #fef805;
+}
+
+.doing-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.doing-text{
+    font-size: 15px;
+}
 
