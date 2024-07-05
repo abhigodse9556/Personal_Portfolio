@@ -83,20 +83,20 @@
                     </li>
 
                     <li class="social-item">
-                        <a href=""><img src="./images/icon/facebook.svg" alt=""></a>
+                        <a href="https://www.facebook.com/abhishek.godse.735/" target="_blank"><img src="./images/icon/facebook.svg" alt=""></a>
                     </li>
 
                     <li class="social-item">
-                        <a href=""><img src="./images/icon/twitter.svg" alt=""></a>
+                        <a href="" target="_blank"><img src="./images/icon/twitter.svg" alt=""></a>
                     </li>
 
                     <li class="social-item">
-                        <a href=""><img src="./images/icon/github.svg" alt=""></a>
+                        <a href="https://github.com/abhigodse9556" target="_blank"><img src="./images/icon/github.svg" alt=""></a>
                     </li>
 
                     <li class="social-item">
                         <i class="bi bi-linkedin"></i>
-                        <a href=""><img src="./images/icon/linkedin.svg" alt=""></i></a>
+                        <a href="https://www.linkedin.com/in/abhishek-godse-89bb9a1a0/" target="_blank"><img src="./images/icon/linkedin.svg" alt=""></i></a>
                     </li>
 
                 </ul>
@@ -119,8 +119,7 @@
                 <h3 class="home-title">Hello, It's me</h3>
                 <h1 class="my-name">Abhishek Godse</h1>
                 <h3 class="home-title">And I'm a 
-                    <em class="text">Front End Developer</em>
-                    <span class="typed-cursor" aria-hidden="true">|</span>
+                    <em id="element" class="text">Front End Developer</em>
                 </h3>
                 <p class="home-text">Passionate front-end developer. Skilled in HTML, HTML5, CSS, Tailwind CSS, Bootstrap, JavaScript. Recent MCA post-graduate. Eager to innovate and learn.</p>
                 <a href=""><div class="download">
@@ -130,5 +129,15 @@
         </section>
 
     </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Front End Developer.</i>', 'Web Developer.'],
+            typeSpeed: 100,
+            loop: true,
+            loopcount: Infinity,
+        });
+    </script>
 </body>
 </html>

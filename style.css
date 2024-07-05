@@ -11,6 +11,7 @@ html,body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto Slab", serif;;
 }
 
 a{
@@ -94,10 +95,6 @@ main{
     border-radius: 5px;
 }
 
-.sidebar-info_more{
-    
-}
-
 .contact-list{
     display: flex;
     flex-direction: column;
@@ -141,7 +138,8 @@ main{
 
 .social-item{
     background-color: #686868;
-    padding: 1px;
+    padding: 5px;
+    border-radius: 50%;
 }
 
 .main-content{
@@ -228,3 +226,6 @@ main{
     height: 30px;
     width: 30px;
 }
+
+
+
