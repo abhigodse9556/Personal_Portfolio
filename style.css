@@ -11,7 +11,7 @@ html,body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto Slab", serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 a{
@@ -303,7 +303,7 @@ main{
     top: 0px;
 }
 
-.content-title{
+.about-title{
     font-size: 35px;
     margin-bottom: 20px;
 }
@@ -356,8 +356,22 @@ main{
     position: absolute;
     color: azure;
     margin: 40px;
-    top: 0px;
+    top: 50px;
     left: 0px;
+    display: flex;
+    overflow-x: scroll;
+    width: 735px;
+}
+
+
+
+.resume-title{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: azure;
+    position: absolute;
+    left: 60px;
+    top: 30px;
 }
 
 .education{
@@ -406,6 +420,8 @@ main{
     padding: 5px;
     margin-bottom: 20px;
     height: 45px;
+    overflow-x: scroll;
+    scrollbar-width: none;
 }
 
 .title-head{
@@ -419,4 +435,10 @@ main{
     to{left: 550px;}
 }
 
+.skills{
+    display: flex;
+    flex-direction: column;
+    width: 730px;
+    padding: 20px;
+} 
 
