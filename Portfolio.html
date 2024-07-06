@@ -109,11 +109,11 @@
 
         <section id="home-content" class="main-content">
             <div class="navbar">
-                <li><a class="nav-items active" href="#">Home</a></li>
+                <li><a class="nav-items active" href="#" onclick="displayHome()">Home</a></li>
                 <li><a class="nav-items" href="#" onclick="displayAbout()">About</a></li>
-                <li><a class="nav-items" href="#" >Resume</a></li>
-                <li><a class="nav-items" href="#" >Projects</a></li>
-                <li><a class="nav-items" href="#" >Contact</a></li>
+                <li><a class="nav-items" href="#" onclick="displayResume()">Resume</a></li>
+                <li><a class="nav-items" href="#" onclick="displayProject()">Projects</a></li>
+                <li><a class="nav-items" href="#" onclick="displayContact()">Contact</a></li>
             </div>
             <article class="home">
                 <h3 class="home-title">Hello, It's me</h3>
@@ -131,21 +131,21 @@
 
         <section id="about-content" class="main-content" style="display: none;">
             <div class="navbar">
-                <li><a class="nav-items" href="">Home</a></li>
-                <li><a class="nav-items active" href="" onclick="displayAbout()">About</a></li>
-                <li><a class="nav-items" href="">Resume</a></li>
-                <li><a class="nav-items" href="">Projects</a></li>
-                <li><a class="nav-items" href="">Contact</a></li>
+                <li><a class="nav-items" href="#" onclick="displayHome()">Home</a></li>
+                <li><a class="nav-items active" href="#" onclick="displayAbout()">About</a></li>
+                <li><a class="nav-items" href="#" onclick="displayResume()">Resume</a></li>
+                <li><a class="nav-items" href="#" onclick="displayProject()">Projects</a></li>
+                <li><a class="nav-items" href="#" onclick="displayContact()">Contact</a></li>
             </div>
             <article class="about">
-                <h3 class="about-title">About Me</h3>
+                <h3 class="content-title">About Me</h3>
                 <p class="about-text">A recent post-graduate in MCA with a specialization in Cloud Technology. 
                     I excel in both front-end and back-end development. On the front end, I create engaging UI/UX with HTML, CSS, JavaScript, jQuery, AngularJS, and Bootstrap. On the back end, I use Java and Python, working with frameworks like Spring and Django. I manage databases using SQL, MongoDB, and MySQL, ensuring data security and integrity. Additionally, I am proficient in cloud computing, building and optimizing cloud systems effectively.
                     <br><br>
                     Throughout my academic journey, I have completed numerous projects, including dynamic websites and interactive web applications, showcasing my ability to translate design concepts into functional code. 
                     Known for my creativity and attention to detail, I am eager to contribute to innovative projects and continue growing in a collaborative team environment.
                 </p>
-                <h3 class="about-title">What I can Do</h3>
+                <h3 class="content-title">What I can Do</h3>
                 <div class="doing-list">
                     <div class="doing">
                         <div class="doing-icon">
@@ -193,14 +193,144 @@
             </article>
         </section>
 
+        <section id="resume-content" class="main-content" style="display: none;">
+            <div class="navbar">
+                <li><a class="nav-items" href="#" onclick="displayHome()">Home</a></li>
+                <li><a class="nav-items" href="#" onclick="displayAbout()">About</a></li>
+                <li><a class="nav-items active" href="#" onclick="displayResume()">Resume</a></li>
+                <li><a class="nav-items" href="" onclick="displayProject()">Projects</a></li>
+                <li><a class="nav-items" href="" onclick="displayContact()">Contact</a></li>
+            </div>
+            <article class="resume">
+                <h3 class="content-title">Resume</h3>
+                <div class="education">
+                    <div class="education-title">
+                        <h3 class="title-head">Education</h3>
+                    </div>
+                    <div class="edu-content">
+                        <div class="duration">
+                            <p>Aug 2022 - May 2024</p>
+                        </div>
+                        <div class="school">
+                            <h4 class="degree">MCA - Cloud Technology</h4>
+                            <p class="college">Ajeenkya D Y Patil University, Pune</p>
+                        </div>
+                        <div class="cgpa">
+                            <p>75%</p>
+                        </div>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="edu-content">
+                        <div class="duration">
+                            <p>Jun 2019 - May 2022</p>
+                        </div>
+                        <div class="school">
+                            <h4 class="degree">B.Sc. - Computer Science</h4>
+                            <p class="college">Ajeenkya D Y Patil University, Pune</p>
+                        </div>
+                        <div class="cgpa">
+                            <p>83.29%</p>
+                        </div>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="edu-content">
+                        <div class="duration">
+                            <p>Jun 2016 - Feb 2018</p>
+                        </div>
+                        <div class="school">
+                            <h4 class="degree">Higher Secondary Certificate(HSC) - PCM</h4>
+                            <p class="college">LP Junior College of Science, Karad</p>
+                        </div>
+                        <div class="cgpa">
+                            <p>70.92%</p>
+                        </div>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="edu-content">
+                        <div class="duration">
+                            <p>Jun 2011 - Mar 2016</p>
+                        </div>
+                        <div class="school">
+                            <h4 class="degree">Secondary School Certificate(SSC)</h4>
+                            <p class="college">Chh. Shivaji Maharaj Highschool, Vaduj</p>
+                        </div>
+                        <div class="cgpa">
+                            <p>95.80%</p>
+                        </div>
+                    </div>
+                    <div class="separator"></div>
+                </div>
+                <div class="skills">
+                    <div class="education-title">
+                        <h3 class="title-head">My Skills</h3>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="project-content" class="main-content" style="display: none;">
+            <div class="navbar">
+                <li><a class="nav-items" href="#" onclick="displayHome()">Home</a></li>
+                <li><a class="nav-items" href="#" onclick="displayAbout()">About</a></li>
+                <li><a class="nav-items" href="#" onclick="displayResume()">Resume</a></li>
+                <li><a class="nav-items active" href="#" onclick="displayProject()">Projects</a></li>
+                <li><a class="nav-items" href="#" onclick="displayContact()">Contact</a></li>
+            </div>
+        </section>
+
+        <section id="contact-content" class="main-content" style="display: none;">
+            <div class="navbar">
+                <li><a class="nav-items" href="#" onclick="displayHome()">Home</a></li>
+                <li><a class="nav-items" href="#" onclick="displayAbout()">About</a></li>
+                <li><a class="nav-items" href="#" onclick="displayResume()">Resume</a></li>
+                <li><a class="nav-items" href="#" onclick="displayProject()">Projects</a></li>
+                <li><a class="nav-items active" href="#" onclick="displayContact()">Contact</a></li>
+            </div>
+        </section>
+
     </main>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
 
+        function displayHome(){
+            document.getElementById("home-content").style.display="flex";
+            document.getElementById("about-content").style.display="none";
+            document.getElementById("resume-content").style.display="none";
+            document.getElementById("project-content").style.display="none";
+            document.getElementById("contact-content").style.display="none";
+        }
+
         function displayAbout(){
             document.getElementById("home-content").style.display="none";
             document.getElementById("about-content").style.display="flex";
+            document.getElementById("resume-content").style.display="none";
+            document.getElementById("project-content").style.display="none";
+            document.getElementById("contact-content").style.display="none";
+        }
+
+        function displayResume(){
+            document.getElementById("home-content").style.display="none";
+            document.getElementById("about-content").style.display="none";
+            document.getElementById("resume-content").style.display="flex";
+            document.getElementById("project-content").style.display="none";
+            document.getElementById("contact-content").style.display="none";
+        }
+
+        function displayProject(){
+            document.getElementById("home-content").style.display="none";
+            document.getElementById("about-content").style.display="none";
+            document.getElementById("resume-content").style.display="none";
+            document.getElementById("project-content").style.display="flex";
+            document.getElementById("contact-content").style.display="none";
+        }
+
+        function displayContact(){
+            document.getElementById("home-content").style.display="none";
+            document.getElementById("about-content").style.display="none";
+            document.getElementById("resume-content").style.display="none";
+            document.getElementById("project-content").style.display="none";
+            document.getElementById("contact-content").style.display="flex";
         }
 
         var typed = new Typed('#element', {

@@ -303,7 +303,7 @@ main{
     top: 0px;
 }
 
-.about-title{
+.content-title{
     font-size: 35px;
     margin-bottom: 20px;
 }
@@ -351,4 +351,72 @@ main{
 .doing-text{
     font-size: 15px;
 }
+
+.resume{
+    position: absolute;
+    color: azure;
+    margin: 40px;
+    top: 0px;
+    left: 0px;
+}
+
+.education{
+    display: flex;
+    flex-direction: column;
+    width: 730px;
+    padding: 20px;
+} 
+
+.degree{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.duration{
+    color: #fef805;
+    width: 190px;
+}
+
+.college{
+    font-size: 18px;
+}
+
+.edu-content{
+    display: flex;
+}
+
+.school{
+    width: 400px;
+}
+
+.cgpa{
+    width: 90px;
+    font-size: 18px;
+}
+
+.title-div{
+    position: relative;
+}
+
+.education-title{
+    position: relative;
+    background-color: #414141;
+    border-radius: 7px;
+    font-size: 25px;
+    padding: 5px;
+    margin-bottom: 20px;
+    height: 45px;
+}
+
+.title-head{
+    position: absolute;
+    left: 5px;
+    animation: motion 10s linear infinite alternate;
+}
+
+@keyframes motion {
+    from{left:5px;}
+    to{left: 550px;}
+}
+
 
