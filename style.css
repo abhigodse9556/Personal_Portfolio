@@ -32,6 +32,28 @@ time{
     display: block;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+  /* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #414141; 
+    border-radius: 10px;
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #808080; 
+}
+
 main{
     margin: 80px 150px;
     display: flex;
@@ -247,6 +269,13 @@ main{
         padding: 15px;
     }
 
+    .info-content .person .name{
+        font-size: 15px;
+    }
+
+    .info-content .person .title{
+        font-size: 12px;
+    }
     .sidebar{
         width: 95%;
         margin: 0px;
@@ -363,8 +392,6 @@ main{
     width: 735px;
 }
 
-
-
 .resume-title{
     font-size: 35px;
     margin-bottom: 20px;
@@ -389,6 +416,7 @@ main{
 .duration{
     color: #fef805;
     width: 190px;
+    padding-left: 10px;
 }
 
 .college{
@@ -442,3 +470,47 @@ main{
     padding: 20px;
 } 
 
+.skill-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.skill-items{
+    width: 210px;
+    height: 150px;
+}
+
+details>summary {
+    list-style: none;
+    font-size: 17px;
+    background-color: #00000030;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.47);
+}
+
+details>ul{
+    padding: 10px 15px;
+    text-shadow: 15px 15px 5px rgba(0, 0, 0, 0.47);
+}
+
+summary::-webkit-details-marker {
+    display: none;
+    font-size: 18px;
+}
+
+summary::after {
+    content: ' ►';
+}
+
+details[open] summary:after {
+    content: " ▼";
+}
+
+details:hover{
+    color: #fef805;
+}
