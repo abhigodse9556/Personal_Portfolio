@@ -206,7 +206,7 @@
             <h3 class="resume-title">Resume</h3>
             <article class="resume">
                 <div class="education">
-                    <div class="education-title">
+                    <div class="resume-subtitle">
                         <h3 class="title-head">Education</h3>
                     </div>
                     <div class="edu-content">
@@ -263,7 +263,7 @@
                     <div class="separator"></div>
                 </div>
                 <div class="skills">
-                    <div class="education-title">
+                    <div class="resume-subtitle">
                         <h3 class="title-head">My Skills</h3>
                     </div>
                     <div class="skill-content">
@@ -295,8 +295,8 @@
                                 <ul>
                                     <li>Spring</li>
                                     <li>Spring Boot</li>
-                                    <li>Maven</li>
                                     <li>Django</li>
+                                    <li>jQuery</li>
                                 </ul>
                             </details>
                         </div>
@@ -330,8 +330,236 @@
                                     <li>AWS</li>
                                     <li>Azure</li>
                                     <li>DevOps</li>
+                                    <li>Powershell</li>
                                 </ul>
                             </details>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <div class="resume-subtitle">
+                        <h3 class="title-head">My Certificates</h3>
+                    </div>
+                    <div id="crtf-all" class="crtf-content">
+                        <div class="crtf-nav">
+                            <a class="crtf-type active" href="#" onclick="displaycrtfAll()">All</a>
+                            <a class="crtf-type" href="#" onclick="displaycrtfProgramming()">Programming</a>
+                            <a class="crtf-type" href="#" onclick="displaycrtfWeb()">Web Tech</a>
+                            <a class="crtf-type" href="#" onclick="displaycrtfCloud()">Cloud Tech</a>
+                            <a class="crtf-type" href="#" onclick="displaycrtfGeneric()">Generic</a>
+                        </div>
+                        <div class="crtf-list">
+                            <a class="crtf-items"  href="https://verify.letsupgrade.in/certificate/LUEHTMLJUL1241390" target="_blank">
+                                <img src="./images/icon/certification.png" alt="">
+                                <div class="crtf-desc">
+                                    <p id="crtf-issuer">LetsUpgrade</p>
+                                    <p id="crtf-name">HTML CSS Bootcamp</p>
+                                </div>
+                            </a>
+                            <a class="crtf-items" href="https://verify.letsupgrade.in/certificate/LUEPYTJUL124784" target="_blank">
+                                <img src="./images/icon/certification.png" alt="">
+                                <div class="crtf-desc">
+                                    <p id="crtf-issuer">LetsUpgrade</p>
+                                    <p id="crtf-name">Python Project Bootcamp</p>
+                                </div>
+                            </a>
+                            <a class="crtf-items" href="https://api.badgr.io/public/assertions/KXMVxCpiQhKNFF2ZOmEC0g" target="_blank">
+                                <img src="./images/icon/certification.png" alt="">
+                                <div class="crtf-desc">
+                                    <p id="crtf-issuer">Postman</p>
+                                    <p id="crtf-name">Postman API Fundamentals</p>
+                                </div>
+                            </a>
+                            <a class="crtf-items" href="https://drive.google.com/file/d/143hKajmo-WjBGoZot9SM0NIEuZNCbyWn/view?usp=sharing" target="_blank">
+                                <img src="./images/icon/certification.png" alt="">
+                                <div class="crtf-desc">
+                                    <p id="crtf-issuer">Infosys Springboard</p>
+                                    <p id="crtf-name">Azure DevOps</p>
+                                </div>
+                            </a>
+                            <a class="crtf-items" href="https://www.credly.com/badges/56c08cbb-797e-4feb-9b36-2dc6716b0194/linked_in_profile" target="_blank">
+                                <img src="./images/icon/certification.png" alt="">
+                                <div class="crtf-desc">
+                                    <p id="crtf-issuer">Cisco</p>
+                                    <p id="crtf-name">Cyber Threat Management</p>
+                                </div>
+                            </a>
+                            <a class="crtf-items" href="https://drive.google.com/file/d/1FPeWgYApVhGVJAqWMlN2NyzZg4WBS-Is/view?usp=sharing" target="_blank">
+                                <img src="./images/icon/certification.png" alt="">
+                                <div class="crtf-desc">
+                                    <p id="crtf-issuer">Infosys Springboard</p>
+                                    <p id="crtf-name">Windows Powershell</p>
+                                </div>
+                            </a>
+                            <a class="crtf-items" href="https://skillsoft.digitalbadges.skillsoft.com/baf57489-9fa5-4b9a-8eb9-401514f7caa1" target="_blank">
+                                <img src="./images/icon/certification.png" alt="">
+                                <div class="crtf-desc">
+                                    <p id="crtf-issuer">Skillsoft</p>
+                                    <p id="crtf-name">Azure Developer: Cloud Solutions</p>
+                                </div>
+                            </a>
+                            <a class="crtf-items"  href="https://www.credly.com/badges/c8443ad0-6d44-4f59-ba2b-01c34b8c4eba/linked_in_profile" target="_blank">
+                                <img src="./images/icon/certification.png" alt="">
+                                <div class="crtf-desc">
+                                    <p id="crtf-issuer">AWS</p>
+                                    <p id="crtf-name">AWS Educate: Cloud 101</p>
+                                </div>
+                            </a>
+                            <a class="crtf-items" href="https://www.credly.com/badges/bb7ca894-21a6-44d4-947a-ace2a0caa2d8/linked_in_profile" target="_blank">
+                                <img src="./images/icon/certification.png" alt="">
+                                <div class="crtf-desc">
+                                    <p id="crtf-issuer">AWS</p>
+                                    <p id="crtf-name">AWS Knowledge: Cloud Essentials</p>
+                                </div>
+                            </a>
+                            <a class="crtf-items" href="https://drive.google.com/file/d/10ZyfTn3nJCTqwNH4VPf0gax58hVR4neS/view?usp=drive_link" target="_blank">
+                                <img src="./images/icon/certification.png" alt="">
+                                <div class="crtf-desc">
+                                    <p id="crtf-issuer">TCS iON</p>
+                                    <p id="crtf-name">Bussiness Etiquette</p>
+                                </div>
+                            </a>
+                            <a class="crtf-items" href="https://www.credly.com/badges/7386447b-d284-4bbe-851b-06f38f3b8ed1/linked_in_profile" target="_blank">
+                                <img src="./images/icon/certification.png" alt="">
+                                <div class="crtf-desc">
+                                    <p id="crtf-issuer">Cisco</p>
+                                    <p id="crtf-name">Python Essentials 1</p>
+                                </div>
+                            </a>
+                            <a class="crtf-items" href="https://drive.google.com/file/d/1i1qGnZZka_wQXtBXs-B2Sped7VX-08cE/view?usp=sharing" target="_blank">
+                                <img src="./images/icon/certification.png" alt="">
+                                <div class="crtf-desc">
+                                    <p id="crtf-issuer">ICTSS</p>
+                                    <p id="crtf-name">Certificate Course in Hardware A+</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="crtf-programming" class="crtf-content" style="display: none;">
+                        <div class="crtf-nav">
+                            <a class="crtf-type" href="#" onclick="displaycrtfAll()">All</a>
+                            <a class="crtf-type active" href="#" onclick="displaycrtfProgramming()">Programming</a>
+                            <a class="crtf-type" href="#" onclick="displaycrtfWeb()">Web Tech</a>
+                            <a class="crtf-type" href="#" onclick="displaycrtfCloud()">Cloud Tech</a>
+                            <a class="crtf-type" href="#" onclick="displaycrtfGeneric()">Generic</a>
+                        </div>
+                        <div class="crtf-list">
+                            <a class="crtf-items" href="https://verify.letsupgrade.in/certificate/LUEPYTJUL124784" target="_blank">
+                                <img src="./images/icon/certification.png" alt="">
+                                <div class="crtf-desc">
+                                    <p id="crtf-issuer">LetsUpgrade</p>
+                                    <p id="crtf-name">Python Project Bootcamp</p>
+                                </div>
+                            </a>
+                            <a class="crtf-items" href="https://api.badgr.io/public/assertions/KXMVxCpiQhKNFF2ZOmEC0g" target="_blank">
+                                <img src="./images/icon/certification.png" alt="">
+                                <div class="crtf-desc">
+                                    <p id="crtf-issuer">Postman</p>
+                                    <p id="crtf-name">Postman API Fundamentals</p>
+                                </div>
+                            </a>
+                            <a class="crtf-items" href="https://www.credly.com/badges/7386447b-d284-4bbe-851b-06f38f3b8ed1/linked_in_profile" target="_blank">
+                                <img src="./images/icon/certification.png" alt="">
+                                <div class="crtf-desc">
+                                    <p id="crtf-issuer">Cisco</p>
+                                    <p id="crtf-name">Python Essentials 1</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="crtf-web" class="crtf-content" style="display: none;">
+                        <div class="crtf-nav">
+                            <a class="crtf-type" href="#" onclick="displaycrtfAll()">All</a>
+                            <a class="crtf-type" href="#" onclick="displaycrtfProgramming()">Programming</a>
+                            <a class="crtf-type active" href="#" onclick="displaycrtfWeb()">Web Tech</a>
+                            <a class="crtf-type" href="#" onclick="displaycrtfCloud()">Cloud Tech</a>
+                            <a class="crtf-type" href="#" onclick="displaycrtfGeneric()">Generic</a>
+                        </div>
+                        <div class="crtf-list">
+                            <a class="crtf-items"  href="https://verify.letsupgrade.in/certificate/LUEHTMLJUL1241390" target="_blank">
+                                <img src="./images/icon/certification.png" alt="">
+                                <div class="crtf-desc">
+                                    <p id="crtf-issuer">LetsUpgrade</p>
+                                    <p id="crtf-name">HTML CSS Bootcamp</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="crtf-cloud" class="crtf-content" style="display: none;">
+                        <div class="crtf-nav">
+                            <a class="crtf-type" href="#" onclick="displaycrtfAll()">All</a>
+                            <a class="crtf-type" href="#" onclick="displaycrtfProgramming()">Programming</a>
+                            <a class="crtf-type" href="#" onclick="displaycrtfWeb()">Web Tech</a>
+                            <a class="crtf-type active" href="#" onclick="displaycrtfCloud()">Cloud Tech</a>
+                            <a class="crtf-type" href="#" onclick="displaycrtfGeneric()">Generic</a>
+                        </div>
+                        <div class="crtf-list">
+                            <a class="crtf-items" href="https://drive.google.com/file/d/143hKajmo-WjBGoZot9SM0NIEuZNCbyWn/view?usp=sharing" target="_blank">
+                                <img src="./images/icon/certification.png" alt="">
+                                <div class="crtf-desc">
+                                    <p id="crtf-issuer">Infosys Springboard</p>
+                                    <p id="crtf-name">Azure DevOps</p>
+                                </div>
+                            <a class="crtf-items" href="https://skillsoft.digitalbadges.skillsoft.com/baf57489-9fa5-4b9a-8eb9-401514f7caa1" target="_blank">
+                                <img src="./images/icon/certification.png" alt="">
+                                <div class="crtf-desc">
+                                    <p id="crtf-issuer">Skillsoft</p>
+                                    <p id="crtf-name">Azure Developer: Cloud Solutions</p>
+                                </div>
+                            </a>
+                            <a class="crtf-items"  href="https://www.credly.com/badges/c8443ad0-6d44-4f59-ba2b-01c34b8c4eba/linked_in_profile" target="_blank">
+                                <img src="./images/icon/certification.png" alt="">
+                                <div class="crtf-desc">
+                                    <p id="crtf-issuer">AWS</p>
+                                    <p id="crtf-name">AWS Educate: Cloud 101</p>
+                                </div>
+                            </a>
+                            <a class="crtf-items" href="https://www.credly.com/badges/bb7ca894-21a6-44d4-947a-ace2a0caa2d8/linked_in_profile" target="_blank">
+                                <img src="./images/icon/certification.png" alt="">
+                                <div class="crtf-desc">
+                                    <p id="crtf-issuer">AWS</p>
+                                    <p id="crtf-name">AWS Knowledge: Cloud Essentials</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="crtf-generic" class="crtf-content" style="display: none;">
+                        <div class="crtf-nav">
+                            <a class="crtf-type" href="#" onclick="displaycrtfAll()">All</a>
+                            <a class="crtf-type" href="#" onclick="displaycrtfProgramming()">Programming</a>
+                            <a class="crtf-type" href="#" onclick="displaycrtfWeb()">Web Tech</a>
+                            <a class="crtf-type" href="#" onclick="displaycrtfCloud()">Cloud Tech</a>
+                            <a class="crtf-type active" href="#" onclick="displaycrtfGeneric()">Generic</a>
+                        </div>
+                        <div class="crtf-list">
+                            <a class="crtf-items" href="https://www.credly.com/badges/56c08cbb-797e-4feb-9b36-2dc6716b0194/linked_in_profile" target="_blank">
+                                <img src="./images/icon/certification.png" alt="">
+                                <div class="crtf-desc">
+                                    <p id="crtf-issuer">Cisco</p>
+                                    <p id="crtf-name">Cyber Threat Management</p>
+                                </div>
+                            </a>
+                            <a class="crtf-items" href="https://drive.google.com/file/d/1FPeWgYApVhGVJAqWMlN2NyzZg4WBS-Is/view?usp=sharing" target="_blank">
+                                <img src="./images/icon/certification.png" alt="">
+                                <div class="crtf-desc">
+                                    <p id="crtf-issuer">Infosys Springboard</p>
+                                    <p id="crtf-name">Windows Powershell</p>
+                                </div>
+                            </a>
+                            <a class="crtf-items" href="https://drive.google.com/file/d/10ZyfTn3nJCTqwNH4VPf0gax58hVR4neS/view?usp=drive_link" target="_blank">
+                                <img src="./images/icon/certification.png" alt="">
+                                <div class="crtf-desc">
+                                    <p id="crtf-issuer">TCS iON</p>
+                                    <p id="crtf-name">Bussiness Etiquette</p>
+                                </div>
+                            </a>
+                            <a class="crtf-items" href="https://drive.google.com/file/d/1i1qGnZZka_wQXtBXs-B2Sped7VX-08cE/view?usp=sharing" target="_blank">
+                                <img src="./images/icon/certification.png" alt="">
+                                <div class="crtf-desc">
+                                    <p id="crtf-issuer">ICTSS</p>
+                                    <p id="crtf-name">Certificate Course in Hardware A+</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -402,6 +630,46 @@
             document.getElementById("resume-content").style.display="none";
             document.getElementById("project-content").style.display="none";
             document.getElementById("contact-content").style.display="flex";
+        }
+
+        function displaycrtfAll(){
+            document.getElementById("crtf-all").style.display="flex";
+            document.getElementById("crtf-programming").style.display="none";
+            document.getElementById("crtf-web").style.display="none";
+            document.getElementById("crtf-cloud").style.display="none";
+            document.getElementById("crtf-generic").style.display="none";
+        }
+
+        function displaycrtfProgramming(){
+            document.getElementById("crtf-all").style.display="none";
+            document.getElementById("crtf-programming").style.display="flex";
+            document.getElementById("crtf-web").style.display="none";
+            document.getElementById("crtf-cloud").style.display="none";
+            document.getElementById("crtf-generic").style.display="none";
+        }
+
+        function displaycrtfWeb(){
+            document.getElementById("crtf-all").style.display="none";
+            document.getElementById("crtf-programming").style.display="none";
+            document.getElementById("crtf-web").style.display="flex";
+            document.getElementById("crtf-cloud").style.display="none";
+            document.getElementById("crtf-generic").style.display="none";
+        }
+
+        function displaycrtfCloud(){
+            document.getElementById("crtf-all").style.display="none";
+            document.getElementById("crtf-programming").style.display="none";
+            document.getElementById("crtf-web").style.display="none";
+            document.getElementById("crtf-cloud").style.display="flex";
+            document.getElementById("crtf-generic").style.display="none";
+        }
+
+        function displaycrtfGeneric(){
+            document.getElementById("crtf-all").style.display="none";
+            document.getElementById("crtf-programming").style.display="none";
+            document.getElementById("crtf-web").style.display="none";
+            document.getElementById("crtf-cloud").style.display="none";
+            document.getElementById("crtf-generic").style.display="flex";
         }
 
         var typed = new Typed('#element', {

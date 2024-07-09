@@ -204,7 +204,7 @@ main{
 }
 
 .nav-items:hover{
-    color: #fef805;
+    color: #808080;
 }
 
 .active{
@@ -440,29 +440,29 @@ main{
     position: relative;
 }
 
-.education-title{
+.resume-subtitle{
     position: relative;
     background-color: #414141;
     border-radius: 7px;
     font-size: 25px;
     padding: 5px;
     margin-bottom: 20px;
+    width: 715px;
     height: 45px;
     overflow-x: scroll;
     scrollbar-width: none;
 }
 
 .title-head{
-    position: absolute;
+    position: relative;
     left: 5px;
     animation: motion 10s linear infinite alternate;
 }
 
 @keyframes motion {
     from{left:5px;}
-    to{left: 550px;}
+    to{left: 500px;}
 }
-
 .skills{
     display: flex;
     flex-direction: column;
@@ -513,4 +513,93 @@ details[open] summary:after {
 
 details:hover{
     color: #fef805;
+}
+
+.certificate{
+    display: flex;
+    flex-direction: column;
+    width: 730px;
+    padding: 20px;
+} 
+
+.crtf-content{
+    display: flex;
+    flex-direction: column;
+    width: 730px;
+}
+
+.crtf-nav{
+    width: 730px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding: 0px 60px 0px 30px;
+}
+
+.crtf-nav .crtf-type{
+    color: azure;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.crtf-nav .crtf-type:hover{
+    color: #808080;
+}
+
+.crtf-nav .active{
+    color: #fef805;
+}
+
+.crtf-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    overflow-y: scroll;
+    height: 370px;
+    padding: 10px;
+}
+
+.crtf-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 180px;
+    height: 150px;
+    background: linear-gradient(to right bottom, #5f5f5f, black);
+    border-radius: 20px;
+    box-shadow: inset 1px 1px 15px black;
+}
+
+.crtf-items:hover{
+    transform: scale(0.9, 0.9);
+    box-shadow: 1px 1px 15px black;
+    background: linear-gradient(to right bottom, black, #5f5f5f);
+}
+
+.crtf-items img{
+    height: 50px;
+    width: 50px;
+}
+
+.crtf-items .crtf-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: azure;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.crtf-items .crtf-desc #crtf-name{
+    text-align: center;
+    margin-top: 5px;
+    color: #fef805;
+}
+
+.crtf-items .crtf-desc #crtf-issuer{
+    text-align: center;
+    margin-top: 5px;
 }
