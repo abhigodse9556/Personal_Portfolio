@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Abhishek Godse: Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <!-- https://rajgupta12.netlify.app/ -->
 <body>
@@ -117,7 +118,6 @@
             </div>
             
             <article class="home">
-                <marquee Scrollamount="2" behavior="scroll" direction="left" height="50px" width="500px" style="display: none;">Abhishek</marquee>
                 <h3 class="home-title">Hello, It's me</h3>
                 <h1 class="my-name">Abhishek Godse</h1>
                 <h3 class="home-title">And I'm a 
@@ -585,6 +585,35 @@
                 <li><a class="nav-items" href="#" onclick="displayProject()">Projects</a></li>
                 <li><a class="nav-items active" href="#" onclick="displayContact()">Contact</a></li>
             </div>
+            <h3 class="con-title">Contact Me</h3>
+            <article>
+                <form>
+                    <marquee class="form-header" Scrollamount="5" behavior="" direction="right" height="50px" width="500px" style="display: none;">Send me your message......</marquee>
+                    <fieldset class="contact-form">
+                        <legend class="form-header">Send me your message here</legend>
+                    <div class="form-item">
+                        <i class="ri-user-fill input-icon"></i>
+                        <input class="form-input" type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-item">
+                        <i class="ri-phone-fill input-icon"></i>
+                        <input class="form-input" type="number" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-item">
+                        <i class="ri-mail-fill input-icon"></i>
+                        <input class="form-input" type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-item">
+                        <i class="ri-message-3-fill input-icon"></i>
+                        <textarea class="form-input" rows="5" placeholder="Message......" required></textarea>
+                    </div>
+                    <div class="form-item">
+                        <i id="btn-icon" class="ri-send-plane-fill input-icon"></i>
+                        <input class="form-input btn" type="submit" value="Send Message">
+                    </div>
+                </fieldset>
+                </form>
+            </article>
         </section>
 
     </main>
