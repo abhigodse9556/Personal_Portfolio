@@ -90,7 +90,7 @@ main{
     width: 100%;
     height: 1.5px;
     background-color: grey;
-    margin: 16px 0;
+    margin: 16px 5px;
 }
 
 .person{
@@ -400,14 +400,32 @@ main{
     top: 30px;
 }
 
+.resume-panel.wide{
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    position: relative;
+    transition: flex 1s;
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+
+    .narrow-panel{
+        display: none;
+    }
+}
+
 .resume-panel{
     border-radius: 50px;
     color: #fff;
     cursor: pointer;
-    flex: 0.5;
     margin: 10px;
     position: relative;
-    transition: flex 0.7s;
+    transition: flex 1s;
+    flex: 0.24;
+    overflow: hidden;
+    display: flex;
 }
 
 .narrow-panel{
@@ -415,46 +433,11 @@ main{
     display: flex;
     flex-direction: column;
     padding: 10px;
-    height: 375px;
+    height: 450px;
+    width: 70px;
     border-radius: 50px;
     align-items: center;
     justify-content: center;
-}
-
-.wide-panel{
-    animation: expand 1s ease-in-out;
-}
-
-@keyframes expand {
-    0% { 
-        opacity: 0; 
-        visibility: hidden; 
-        transform: scale(0, 0); 
-    }  
-
-    100% { 
-        opacity: 1; 
-        visibility: visible; 
-        transform: scale(1, 1); 
-    }
-}
-
-.narrow-panel{
-    animation: shrink 1s ease-in-out;
-}
-
-@keyframes shrink {
-    0% { 
-        opacity: 0; 
-        visibility: hidden; 
-        transform: scale(0, 0); 
-    }  
-
-    100% { 
-        opacity: 1; 
-        visibility: visible; 
-        transform: scale(1, 1); 
-    }
 }
 
 .education{
@@ -481,6 +464,7 @@ main{
 
 .edu-content{
     display: flex;
+    margin-left: 5px;
 }
 
 .school{
@@ -503,7 +487,6 @@ main{
     font-size: 25px;
     padding: 5px;
     margin-bottom: 20px;
-    width: 715px;
     height: 45px;
     overflow-x: scroll;
     scrollbar-width: none;

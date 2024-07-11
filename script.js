@@ -85,29 +85,17 @@ function displaycrtfGeneric(){
     document.getElementById("crtf-generic").style.display="flex";
 }
 
-function expandEdu(){
-    document.getElementById("edu-narrow").style.display="none"
-    document.getElementById("edu-wide").style.display="flex"
-    document.getElementById("skill-narrow").style.display="flex"
-    document.getElementById("skill-wide").style.display="none"
-    document.getElementById("crtf-narrow").style.display="flex"
-    document.getElementById("crtf-wide").style.display="none"
-}
+const panels = document.querySelectorAll('.resume-panel')
 
-function expandSkills(){
-    document.getElementById("edu-narrow").style.display="flex"
-    document.getElementById("edu-wide").style.display="none"
-    document.getElementById("skill-narrow").style.display="none"
-    document.getElementById("skill-wide").style.display="flex"
-    document.getElementById("crtf-narrow").style.display="flex"
-    document.getElementById("crtf-wide").style.display="none"
-}
+panels.forEach(panel => {
+    panel.addEventListener('click', () => {
+        removeActiveClasses()
+        panel.classList.add('wide')
+    })
+})
 
-function expandCrtf(){
-    document.getElementById("edu-narrow").style.display="flex"
-    document.getElementById("edu-wide").style.display="none"
-    document.getElementById("skill-narrow").style.display="flex"
-    document.getElementById("skill-wide").style.display="none"
-    document.getElementById("crtf-narrow").style.display="none"
-    document.getElementById("crtf-wide").style.display="flex"
+function removeActiveClasses() {
+    panels.forEach(panel => {
+        panel.classList.remove('wide')
+    })
 }
