@@ -205,6 +205,8 @@ main{
 
 .nav-items:hover{
     color: #808080;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .active{
@@ -438,6 +440,13 @@ main{
     border-radius: 50px;
     align-items: center;
     justify-content: center;
+}
+
+.narrow-panel:hover{
+    background-color: #808080;
+    color: #414141;
+    transform: scale(0.9,0.9);
+    transition: all 0.5s;
 }
 
 .education{
