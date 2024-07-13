@@ -99,3 +99,16 @@ function removeActiveClasses() {
         panel.classList.remove('wide')
     })
 }
+
+const hidecon = document.querySelectorAll('.hide-contact')
+const showcon = document.querySelectorAll('.show-contact')
+
+showcon.forEach(showc => {
+    showc.addEventListener('click', () =>{
+        hidecon.forEach(hidec => {
+            hidec.classList.toggle('hide-contact')
+        })
+    })
+})
+    
+    
