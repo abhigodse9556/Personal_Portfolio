@@ -138,6 +138,213 @@
         width: 20px;
     }
 
+    #about-content{
+        position: relative;
+        height: 70vh;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        align-items: flex-start;
+        justify-content: end;
+        padding: 0;
+    }
+
+    #about-content .navbar{
+        position: sticky;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+
+    .about{
+        margin: 70px 5px 5px 5px;
+        padding: 5px;
+    }
+
+    #about-content .about .about-title{
+        font-size: 25px;
+    }
+
+    .doing-list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #resume-content{
+        height: 70vh;
+        align-items: flex-start;
+        justify-content: end;
+        padding: 0px;
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+
+    #resume-content .navbar{
+        position: sticky;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+
+    #resume-content .resume-title{
+        margin-top: 45px;
+        font-size: 25px;
+        left: 30px;
+    }
+
+    .resume{
+        margin: 55px 0;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .resume-panel{
+        flex-direction: column;
+    }
+
+    .resume-panel.wide{
+        border-radius: 0px;
+        height: 100vh;
+    }
+
+    .narrow-panel{
+        /* flex-direction: row;
+        padding: 5px;
+        height: 50px;
+        width: 100vw; */
+        display: none;
+    }
+
+    .resume-subtitle{
+        border-radius: 7px;
+        font-size: 18px;
+        padding: 5px;
+        height: 35px;
+    }
+    
+    .title-head{
+        left: 20px;
+        animation-duration: 3s;
+    }
+    
+    @keyframes motion {
+        from{left:20px;}
+        to{left: 50vw;}
+    }
+
+    .education{
+        display: flex;
+        flex-direction: column;
+        width: 730px;
+        padding: 20px;
+    } 
+    
+    .degree{
+        font-size: 16px;
+    }
+    
+    .college{
+        font-size: 16px;
+    }
+    
+    .edu-content{
+        flex-direction: column;
+        margin-bottom: 15px;
+        gap: 5px;
+    }
+
+    .duration{
+        padding-left: 0;
+    }
+    
+    .school{
+        width: 400px;
+    }
+    
+    .cgpa{
+        font-size: 15px;
+    }
+
+    .skill-content{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    .skill-items{
+        width: 80vw;
+        height: 100%;
+    }
+
+    .crtf-content{
+        width: 110%;
+    }
+
+    .crtf-nav{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .crtf-nav .crtf-type{
+        font-size: 14px;
+    }
+
+    .crtf-list{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        scrollbar-width: none;
+    }
+
+    #contact-content{
+        height: 70vh;
+        padding: 0px;
+    }
+
+    #contact-content .con-title{
+        font-size: 25px;
+        left: 30px;
+        margin-top: 45px;
+    }
+
+    .contact-form{
+        margin-top: 80px;
+        width: 100%;
+        height: 400px;
+    }
+
+    .form-header{
+        font-size: 18px;
+    }
+
+    .form-item i{
+        font-size: 18px;
+        margin-left: 8px;
+        margin-top: 4px;
+    }
+
+    .form-input{
+        width: 80vw;
+        margin: 0 10px;
+        padding: 10px 25px;
+        font-size: 16px;
+    }
+
+    .form-input.btn{
+        width: min-content;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media (min-width: 376px) and (max-width: 426px){
+    .crtf-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        transform: scale(0.8);
+    }
 }
 
 @media (min-width: 321px) and (max-width: 426px){
