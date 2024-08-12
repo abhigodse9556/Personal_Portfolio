@@ -6,6 +6,8 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
 
+require('dotenv').config();
+
 app.use(cors());
 app.use(bodyParser.json());
 // Middleware
@@ -23,8 +25,8 @@ app.get('/', (req, res) => {
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'abhiabhishek9556@gmail.com', // Replace with your Gmail
-        pass: 'gwrv tedy biqu jftz',  // Replace with your Gmail password or App Password
+        user: process.env.EMAIL_USER, // Replace with your Gmail
+        pass: process.env.EMAIL_PASS,  // Replace with your Gmail password or App Password
     },
 });
 
@@ -52,6 +54,8 @@ app.post('/api/send', (req, res) => {
 
 module.exports = app;
 
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
-});
+if (require.main === module) {
+    app.listen(port, () => {
+        console.log(`Server running at http://localhost:${port}`);
+    });
+}
