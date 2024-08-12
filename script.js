@@ -112,3 +112,27 @@ showcon.forEach(showc => {
 })
     
     
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent the default form submission
+
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    fetch('/send', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, phone, email, message }),
+    })
+    .then(response => response.text())
+    .then(data => {
+        alert('Message sent successfully!');
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Failed to send message.');
+    });
+});

@@ -659,29 +659,29 @@
                 <li><a class="nav-items" href="#" onclick="displayAbout()">About</a></li>
                 <li><a class="nav-items" href="#" onclick="displayResume()">Resume</a></li>
                 <li><a class="nav-items" href="#" onclick="displayProject()">Projects</a></li>
-                <li><a class="nav-items active" href="#" onclick="displayContact()">Contact</a></li>
+                <li><a class="nav-items active" href="" onclick="displayContact()">Contact</a></li>
             </div>
             <h3 class="con-title">Contact Me</h3>
             <article>
-                <form>
+                <form id="contact-form">
                     <marquee class="form-header" Scrollamount="5" behavior="" direction="right" height="50px" width="500px" style="display: none;">Send me your message......</marquee>
                     <fieldset class="contact-form">
                         <legend class="form-header">Send me your message here</legend>
                     <div class="form-item">
                         <i class="ri-user-fill input-icon"></i>
-                        <input class="form-input" type="text" placeholder="Full Name" required>
+                        <input id="name" class="form-input" type="text" placeholder="Full Name" required>
                     </div>
                     <div class="form-item">
                         <i class="ri-phone-fill input-icon"></i>
-                        <input class="form-input" type="number" placeholder="Phone Number" required>
+                        <input id="phone" class="form-input" type="number" placeholder="Phone Number" required>
                     </div>
                     <div class="form-item">
                         <i class="ri-mail-fill input-icon"></i>
-                        <input class="form-input" type="email" placeholder="Email Address" required>
+                        <input id="email" class="form-input" type="email" placeholder="Email Address" required>
                     </div>
                     <div class="form-item">
                         <i class="ri-message-3-fill input-icon"></i>
-                        <textarea class="form-input" rows="5" placeholder="Message......" required></textarea>
+                        <textarea id="message" class="form-input" rows="5" placeholder="Message......" required></textarea>
                     </div>
                     <div class="form-item">
                         <i id="btn-icon" class="ri-send-plane-fill input-icon"></i>
