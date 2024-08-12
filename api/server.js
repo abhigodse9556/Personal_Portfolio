@@ -4,15 +4,20 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const path = require('path');
 const app = express();
-const port = 3000;
+//const port = 3000;
 
 app.use(cors());
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname)));
+// Middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-// Serve the index.html file
+// Serve static files from /public
+app.use(express.static(path.join(__dirname, '../public')));
+
+// Serve index.html
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname, '../public', 'index.html'));
 });
 // Set up the nodemailer transporter
 const transporter = nodemailer.createTransport({
@@ -24,7 +29,7 @@ const transporter = nodemailer.createTransport({
 });
 
 // Handle POST request to send email
-app.post('/send', (req, res) => {
+app.post('/api/send', (req, res) => {
     const { name, email, phone, message } = req.body;
 
     const mailOptions = {
@@ -45,6 +50,8 @@ app.post('/send', (req, res) => {
     });
 });
 
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
-});
+module.exports = app;
+
+// app.listen(port, () => {
+//     console.log(`Server running at http://localhost:${port}`);
+// });

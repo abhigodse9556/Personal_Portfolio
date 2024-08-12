@@ -120,7 +120,7 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
-    fetch('/send', {
+    fetch('/api/send', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
