@@ -14,7 +14,7 @@ function displayHome() {
   document.getElementById("home-content").style.display = "flex";
   document.getElementById("about-content").style.display = "none";
   document.getElementById("resume-content").style.display = "none";
-  document.getElementById("project-content").style.display = "none";
+  document.getElementById("work-experience-content").style.display = "none";
   document.getElementById("contact-content").style.display = "none";
 }
 
@@ -22,7 +22,7 @@ function displayAbout() {
   document.getElementById("home-content").style.display = "none";
   document.getElementById("about-content").style.display = "flex";
   document.getElementById("resume-content").style.display = "none";
-  document.getElementById("project-content").style.display = "none";
+  document.getElementById("work-experience-content").style.display = "none";
   document.getElementById("contact-content").style.display = "none";
 }
 
@@ -30,15 +30,15 @@ function displayResume() {
   document.getElementById("home-content").style.display = "none";
   document.getElementById("about-content").style.display = "none";
   document.getElementById("resume-content").style.display = "flex";
-  document.getElementById("project-content").style.display = "none";
+  document.getElementById("work-experience-content").style.display = "none";
   document.getElementById("contact-content").style.display = "none";
 }
 
-function displayProject() {
+function displayWorkExperience() {
   document.getElementById("home-content").style.display = "none";
   document.getElementById("about-content").style.display = "none";
   document.getElementById("resume-content").style.display = "none";
-  document.getElementById("project-content").style.display = "flex";
+  document.getElementById("work-experience-content").style.display = "flex";
   document.getElementById("contact-content").style.display = "none";
 }
 
@@ -46,7 +46,7 @@ function displayContact() {
   document.getElementById("home-content").style.display = "none";
   document.getElementById("about-content").style.display = "none";
   document.getElementById("resume-content").style.display = "none";
-  document.getElementById("project-content").style.display = "none";
+  document.getElementById("work-experience-content").style.display = "none";
   document.getElementById("contact-content").style.display = "flex";
 }
 
