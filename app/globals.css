@@ -1,4 +1,4 @@
-@import url('https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css');
+@import url("https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css");
 
 :root {
   --bg-gradient-onyx: linear-gradient(
@@ -1075,6 +1075,13 @@ details:hover {
   .form-input.btn {
     width: min-content;
     margin-bottom: 15px;
+  }
+
+  .form-status {
+    font-size: 12px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    margin: 10px;
+    color: #fff;
   }
 }
 
