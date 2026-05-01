@@ -17,7 +17,7 @@ export async function POST(request) {
       ZOHO_MAIL_USER,
       ZOHO_MAIL_PASS,
       ZOHO_MAIL_TO,
-      ZOHO_SMTP_HOST = "smtp.zoho.in",
+      ZOHO_MAIL_REGION = "in",
       ZOHO_SMTP_PORT = "465",
     } = process.env;
 
@@ -29,8 +29,9 @@ export async function POST(request) {
     }
 
     const port = Number(ZOHO_SMTP_PORT);
+    const smtpHost = ["smtp", "zoho", ZOHO_MAIL_REGION].join(".");
     const transporter = nodemailer.createTransport({
-      host: ZOHO_SMTP_HOST,
+      host: smtpHost,
       port,
       secure: port === 465,
       auth: {

@@ -125,12 +125,22 @@ function Navbar({ activeSection, setActiveSection }) {
 function Sidebar() {
   const [imageIndex, setImageIndex] = useState(0);
   const [showContact, setShowContact] = useState(false);
+  const [contactEmail, setContactEmail] = useState("");
 
   useEffect(() => {
     const timer = setInterval(() => {
       setImageIndex((current) => (current + 1) % profileImages.length);
     }, 1500);
     return () => clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    setContactEmail(
+      String.fromCharCode(
+        97, 98, 104, 105, 103, 111, 100, 115, 101, 57, 53, 53, 54,
+        64, 103, 109, 97, 105, 108, 46, 99, 111, 109,
+      ),
+    );
   }, []);
 
   return (
@@ -170,8 +180,8 @@ function Sidebar() {
             </div>
             <div className="contact-info">
               <p className="contact-title">EMAIL</p>
-              <a className="contact-link" href="mailto:abhigodse9556@gmail.com">
-                abhigodse9556@gmail.com
+              <a className="contact-link" href={contactEmail ? `mailto:${contactEmail}` : undefined}>
+                {contactEmail || "Email me"}
               </a>
             </div>
           </li>

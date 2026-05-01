@@ -692,6 +692,13 @@ details:hover {
   border: 1px solid #808080;
 }
 
+.form-status {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-bottom: 10px;
+  margin-top: -20px;
+  color: #fff;
+}
+
 .input-icon {
   position: absolute;
   font-size: 26px;
@@ -1075,13 +1082,6 @@ details:hover {
   .form-input.btn {
     width: min-content;
     margin-bottom: 15px;
-  }
-
-  .form-status {
-    font-size: 12px;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    margin: 10px;
-    color: #fff;
   }
 }
 
