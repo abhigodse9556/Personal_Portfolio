@@ -108,3 +108,39 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+
+a {
+  text-decoration: none;
+}
+
+.nav-link {
+  position: relative; /* 🌟 FIXED: Keeps the line locked to the link, not the div */
+  display: inline-block; /* 🌟 FIXED: Allows 3D transforms to work correctly on text */
+  padding-bottom: 2px; /* Optional: Adds space so the line doesn't scratch the text */
+  transition: all 0.5s ease-in-out; /* Moved here so it animates smoothly both ON and OFF hover */
+}
+
+.nav-link:hover {
+  color: var(--warning);
+  /* 🌟 FIXED: Added units (px) to translate3d and gave it a real starting rotation */
+  transform: rotate3d(2, 4, -1, 30deg) scale3d(1.1, 1.1, 1)
+    translate3d(1px, -2px, 1px);
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background-color: var(--warning);
+  transition:
+    width 0.5s ease,
+    left 0.5s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}

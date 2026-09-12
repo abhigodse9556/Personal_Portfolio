@@ -20,6 +20,8 @@ import {
   SendHorizontal,
   SunDim,
   Moon,
+  X,
+  Menu,
 } from "lucide-react";
 
 export const icons = {
@@ -44,6 +46,8 @@ export const icons = {
   sendHorizontal: SendHorizontal,
   sunDim: SunDim,
   moon: Moon,
+  x: X,
+  menu: Menu,
 };
 
 export type IconName = keyof typeof icons;
