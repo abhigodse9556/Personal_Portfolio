@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "motion/react";
 import { Icon } from "./ui/icon";
 
 const Navbar = () => {
@@ -42,7 +43,12 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 z-50 w-full border-b border-border">
+    <motion.nav
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 2 }}
+      className="fixed top-0 z-50 w-full border-b border-border"
+    >
       <div className="mx-auto flex items-center justify-between px-6 py-3">
         {/* Logo */}
         <div className="shrink-0 text-primary">
@@ -97,7 +103,7 @@ const Navbar = () => {
           ))}
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

@@ -122,6 +122,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 .nav-link {
   position: relative; /* 🌟 FIXED: Keeps the line locked to the link, not the div */
   display: inline-block; /* 🌟 FIXED: Allows 3D transforms to work correctly on text */
