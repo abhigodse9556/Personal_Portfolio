@@ -17,7 +17,7 @@
   --border-muted: #f0f0f0;
 
   /* Text */
-  --text-primary: #171717;
+  --text-primary: rgba(27, 27, 27, 0.86);
   --text-secondary: #525252;
   --text-muted: #737373;
   --text-disabled: #a3a3a3;
@@ -136,7 +136,7 @@ button {
 .nav-link:hover {
   color: var(--warning);
   /* 🌟 FIXED: Added units (px) to translate3d and gave it a real starting rotation */
-  transform: rotate3d(2, 4, -1, 30deg) scale3d(1.1, 1.1, 1)
+  transform: rotate3d(2, 4, -1, 0deg) scale3d(1.1, 1.1, 1)
     translate3d(1px, -2px, 1px);
 }
 

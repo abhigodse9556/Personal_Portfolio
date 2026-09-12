@@ -25,12 +25,8 @@ const Navbar = () => {
       href: "#journey",
     },
     {
-      name: "Certificates",
-      href: "#certificates",
-    },
-    {
-      name: "Contact",
-      href: "#contact",
+      name: "Work",
+      href: "#work",
     },
   ];
 
@@ -39,9 +35,9 @@ const Navbar = () => {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 2 }}
-      className="fixed top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur"
+      className="fixed top-0 z-50 w-full bg-background/80 backdrop-blur font-mono"
     >
-      <div className="mx-auto flex items-center justify-between px-6 py-3">
+      <div className="mx-auto flex items-center justify-between gap-4 px-6 py-3">
         {/* Logo */}
         <div className="shrink-0 text-primary">
           <span className="text-xl font-semibold tracking-tight">Abhi.dev</span>
@@ -59,7 +55,7 @@ const Navbar = () => {
         </button>
 
         {/* Desktop Navigation */}
-        <div className="hidden items-center gap-6 md:flex">
+        <div className="hidden md:flex md:gap-4">
           {sections.map((section) => (
             <a
               key={section.name}
@@ -70,11 +66,11 @@ const Navbar = () => {
               {section.name}
             </a>
           ))}
-          <a>
-            <button className="nav-link transition-colors hover:text-primary">
-              Resume
-            </button>
-          </a>
+        </div>
+        <div className="hidden md:block">
+          <button className="bg-primary text-primary-foreground px-4 py-2 transition-colors hover:bg-primary/80 rounded-full">
+            Get In Touch
+          </button>
         </div>
       </div>
 
@@ -98,6 +94,9 @@ const Navbar = () => {
               {section.name}
             </a>
           ))}
+          <button className="bg-primary text-primary-foreground px-4 py-2 transition-colors hover:bg-primary/80 rounded-full mt-4">
+            Get In Touch
+          </button>
         </div>
       </div>
     </motion.nav>

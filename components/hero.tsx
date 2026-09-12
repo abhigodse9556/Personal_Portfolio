@@ -7,12 +7,12 @@ import Typewriter from "./ui/typewriter";
 
 const Hero = () => {
   return (
-    <div className="flex font-sans">
+    <div className="flex font-mono">
       <main className="flex flex-col min-h-[90vh] items-center justify-center md:flex-row px-6 py-8 mt-8">
         <div id="hero-text" className="flex min-w-[50vw] items-center">
           <div className="flex flex-col gap-2 p-2 md:p-4 lg:p-20">
             <motion.h1
-              className="text-xl font-bold md:text-xl"
+              className="text-xl text-text-secondary font-bold md:text-xl"
               initial={{ translateX: -100 }}
               animate={{ translateX: 0 }}
               transition={{ duration: 0.5 }}
@@ -20,7 +20,7 @@ const Hero = () => {
               Hello, It&apos;s me
             </motion.h1>
             <motion.h1
-              className="text-3xl font-bold md:text-5xl lg:text-6xl xl:text-7xl"
+              className="text-3xl text-text-primary font-mono font-bold md:text-5xl lg:text-6xl xl:text-7xl"
               initial={{ opacity: 0, scale: -6 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.75, duration: 1.5 }}
@@ -54,7 +54,7 @@ const Hero = () => {
               transition={{ delay: 4, duration: 1.25 }}
             >
               <a
-                className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-primary px-2 text-primary-foreground transition-colors hover:bg-primary/80 max-w-40"
+                className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-primary px-2 text-primary-foreground transition-colors hover:bg-primary/80 max-w-50"
                 href="#contact"
               >
                 <Image
@@ -67,7 +67,7 @@ const Hero = () => {
                 Get in Touch
               </a>
               <a
-                className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/8 px-5 transition-colors hover:border-transparent hover:bg-black/4 dark:border-white/[.145] dark:hover:bg-[#1a1a1a] max-w-40"
+                className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/8 px-5 transition-colors hover:border-transparent hover:bg-black/4 dark:border-white/[.145] dark:hover:bg-[#1a1a1a] max-w-50"
                 href={links.resume}
                 target="_blank"
                 rel="noopener noreferrer"
