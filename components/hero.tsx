@@ -77,18 +77,21 @@ const Hero = () => {
             </motion.div>
           </div>
         </div>
-        <div
+        <motion.div
           id="hero-images"
-          className="flex min-w-[40vw] min-h-[80vh] items-center justify-center border-2 border-dashed border-black/8 dark:border-white/[.145]"
+          className="flex md:min-w-[40vw] md:min-h-[80vh] items-center justify-center border-0 border-dashed border-black/8 dark:border-white/[.145]"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 3, duration: 3 }}
         >
           <Image
-            className="dark:invert"
-            src="/hero.png"
+            className="dark:invert dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
+            src="/app-development-frameworks.png"
             alt="Abhishek Godse"
-            width={500}
-            height={500}
+            width={1500}
+            height={1500}
           />
-        </div>
+        </motion.div>
       </main>
     </div>
   );

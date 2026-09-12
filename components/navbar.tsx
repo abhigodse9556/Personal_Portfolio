@@ -21,16 +21,8 @@ const Navbar = () => {
       href: "#skills",
     },
     {
-      name: "Experience",
-      href: "#experience",
-    },
-    {
-      name: "Projects",
-      href: "#projects",
-    },
-    {
-      name: "Education",
-      href: "#education",
+      name: "Journey",
+      href: "#journey",
     },
     {
       name: "Certificates",
@@ -47,7 +39,7 @@ const Navbar = () => {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 2 }}
-      className="fixed top-0 z-50 w-full border-b border-border"
+      className="fixed top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur"
     >
       <div className="mx-auto flex items-center justify-between px-6 py-3">
         {/* Logo */}
@@ -78,6 +70,11 @@ const Navbar = () => {
               {section.name}
             </a>
           ))}
+          <a>
+            <button className="nav-link transition-colors hover:text-primary">
+              Resume
+            </button>
+          </a>
         </div>
       </div>
 
