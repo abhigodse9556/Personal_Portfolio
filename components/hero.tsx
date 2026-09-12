@@ -79,8 +79,16 @@ const Hero = () => {
         </div>
         <div
           id="hero-images"
-          className="flex min-w-[30vw] items-center justify-center"
-        ></div>
+          className="flex min-w-[40vw] min-h-[80vh] items-center justify-center border-2 border-dashed border-black/8 dark:border-white/[.145]"
+        >
+          <Image
+            className="dark:invert"
+            src="/hero.png"
+            alt="Abhishek Godse"
+            width={500}
+            height={500}
+          />
+        </div>
       </main>
     </div>
   );

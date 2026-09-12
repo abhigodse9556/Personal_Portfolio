@@ -1,9 +1,5 @@
 "use client";
 
-import { links } from "@/data/links";
-import Image from "next/image";
-import { motion } from "motion/react";
-
 const About = () => {
   return (
     <div className="flex flex-col flex-1 items-center justify-center font-sans">
